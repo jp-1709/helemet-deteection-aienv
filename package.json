@@ -1,0 +1,27 @@
+{
+  "name": "helmet-detection-system",
+  "version": "1.0.0",
+  "description": "Helmet Detection System with React + FastAPI + YOLOv8",
+  "scripts": {
+    "install-backend": "cd backend && pip install -r requirements.txt",
+    "install-frontend": "cd frontend && npm install",
+    "start-backend": "cd backend && python main.py",
+    "start-frontend": "cd frontend && npm run dev",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "build": "cd frontend && npm run build",
+    "test": "cd frontend && npm test"
+  },
+  "keywords": [
+    "helmet-detection",
+    "yolov8",
+    "fastapi",
+    "react",
+    "computer-vision",
+    "safety"
+  ],
+  "author": "Helmet Detection Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

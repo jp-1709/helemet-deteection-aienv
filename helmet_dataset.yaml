@@ -1,0 +1,23 @@
+
+# Construction Helmet Detection Dataset
+# Place your images in:
+#   dataset/images/train/   dataset/images/val/
+# Place YOLO-format labels in:
+#   dataset/labels/train/   dataset/labels/val/
+
+path: ./dataset          # root directory
+train: images/train
+val:   images/val
+test:  images/test       # optional
+
+nc: 2                    # number of classes
+names:
+  0: helmet
+  1: no_helmet
+
+# To download a free helmet dataset from Roboflow:
+#   pip install roboflow
+#   from roboflow import Roboflow
+#   rf = Roboflow(api_key="YOUR_KEY")
+#   project = rf.workspace("roboflow-universe-projects").project("hard-hat-workers")
+#   dataset = project.version(2).download("yolov8")
